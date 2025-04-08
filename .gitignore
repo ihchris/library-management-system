@@ -1,0 +1,38 @@
+# Bytecode e cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ambientes virtuais
+.env/
+.venv/
+env/
+venv/
+
+# Arquivos de log
+*.log
+
+# Arquivos de dados gerados
+*.json
+books.json
+
+# Arquivos de configuração de IDEs
+.vscode/
+.idea/
+
+# Arquivos temporários e de backup
+*.swp
+*~
+*.bak
+
+# Testes temporários
+.pytest_cache/
+tests/__pycache__/
+test_output/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Banco de dados SQLite (caso use futuramente)
+*.sqlite3
