@@ -1,7 +1,9 @@
 from models import Book, User, Library
 from operations import lend_book
 from utils import save_books, load_books
+from version import __version__
 
+print(f"Library System - Version {__version__}")
 library = Library()
 book = Book("1984", "George Orwell", "123")
 user = User("Chris", 1)
