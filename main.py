@@ -12,6 +12,11 @@ class User:
         self.ID = ID
         self.borrowed_books = []
 
+    def __str__(self):
+        return f"User: {self.name} (ID: {self.ID})"
+
+    def __repr__(self):
+        return f"<User('{self.name}', {self.ID})>"
 
 class Library:
     def __init__(self):
@@ -48,8 +53,8 @@ library.add_book(book1)
 library.lend_book("978-0-306-40615-7", user1)
 
 # Checking the status of the book and user
-print("\n--- Estado Atual ---")
-print(f"Livro disponível? {book1.available}")
-print(f"Livros emprestados por {user1.name}: {[book.title for book in user1.borrowed_books]}")
+print("\n--- Current Status ---")
+print(f"Book available? {book1.available}")
+print(f"Books borrowed by {user1.name}: {[book.title for book in user1.borrowed_books]}")
 
 
